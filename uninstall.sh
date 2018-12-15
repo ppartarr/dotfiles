@@ -11,6 +11,12 @@ do
   sudo pacman -Rs "$pkg" --noconfirm
 done
 
+for aur in "${AUR[@]}"
+do
+  echo "Uninstalling ${aur}..."
+  sudo pacman -Rs "$aur" --noconfirm
+done
+
 CURRENT_DIR=$PWD
 
 dirs=$(find . -maxdepth 1 -mindepth 1 -type d -not -name '.git' -print)

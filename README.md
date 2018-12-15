@@ -9,8 +9,12 @@
 </p>
 
 <div align="center">
-  [Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-  [Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+  <a href="https://github.com/ellerbrock/open-source-badge/">
+    <img alt="Open Source Love" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
+  </a>
+  <a href="https://opensource.org/licenses/mit-license.php">
+    <img alt="Bash Shell" src="https://badges.frapsoft.com/bash/v1/bash.png?v=103" />
+  </a>
 </div>
 
 ## Install
