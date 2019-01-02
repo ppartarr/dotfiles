@@ -76,12 +76,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_GB.UTF-8
 
-# Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='vim'
- fi
+# Preferred editor
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -99,19 +95,5 @@ export LANG=en_GB.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-# Add Pip Installs Packages (pip)
-export PATH=$PATH:/home/philippe/.local/bin
 
-# Add Maven to path
-export PATH=$PATH:/opt/apache-maven-3.6.0/bin
-
-# Set Java Home
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
-
-# Node Version Manager (nvm) autocomplete
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# TMC autocomplete
-source /home/philippe/.tmc-autocomplete.sh || true
+source $HOME/.envvars

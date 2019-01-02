@@ -5,9 +5,10 @@ export PKG=(
   termite
   wget
   xclip
+  chromium
 )
 
 export AUR=(
-  chromium-widevine
+  bitwarden-bin
   mailspring
 )

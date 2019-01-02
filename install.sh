@@ -3,8 +3,10 @@
 # exit on error
 set -e
 
-# install official and aur packages
-source ~/.dotfiles/packages.sh
+# Add source to suppress shellcheck error
+# https://github.com/koalaman/shellcheck/wiki/Sc1090
+# shellcheck source=/dev/null
+. "$HOME/.dotfiles/packages.sh"
 
 for pkg in "${PKG[@]}"
 do
@@ -15,7 +17,7 @@ done
 for aur in "${AUR[@]}"
 do
   echo "Installing ${aur}..."
-  sudo yaourt -Syu "$aur" --needed --noconfirm
+  yay -Syu "$aur" --needed --noconfirm
 done
 
 # install dotfiles
@@ -27,6 +29,3 @@ do
   echo "Installing ${dir}..."
   sh "$dir/install.sh"
 done
-
-# betterlockscreen
-systemctl enable betterlockscreen@philippe
