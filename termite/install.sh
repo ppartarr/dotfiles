@@ -4,4 +4,4 @@ set -e
 
 sudo pacman -Syu termite --needed --noconfirm
 
-ls -svf ~/.dotfiles/termite/config ~/.config/termite/config
+ln -svf ~/.dotfiles/termite/config ~/.config/termite/config
