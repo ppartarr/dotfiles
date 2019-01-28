@@ -6,9 +6,11 @@ export PKG=(
   wget
   xclip
   chromium
+  noto-fonts-emoji
 )
 
 export AUR=(
   bitwarden-bin
   mailspring
+  powerline-fonts-git
 )

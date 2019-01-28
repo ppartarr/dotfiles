@@ -2,8 +2,6 @@
 
 sudo pacman -Rs zsh --needed --noconfirm
 
-rm -rf ~/.oh-my-zsh
-
 unlink ~/.envvars
 unlink ~/.zshrc
 

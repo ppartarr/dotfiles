@@ -10,7 +10,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -svf ~/.dotfiles/zsh/.envvars ~
 ln -svf ~/.dotfiles/zsh/.zshrc ~
 
-# install zsh auto suggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
-
 chsh -s "$(command -v zsh)"
