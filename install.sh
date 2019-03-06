@@ -21,7 +21,7 @@ do
 done
 
 # install dotfiles
-cd ~/.dotfiles
+cd "$HOME/.dotfiles"
 
 dirs=$(find . -maxdepth 1 -mindepth -type -d -not -name '.git' -print)
 for dir in $dirs

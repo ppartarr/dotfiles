@@ -21,12 +21,12 @@
 ```bash
 git clone https://github.com/ppartarr/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-sh install.sh
+bash install.sh
 ```
 
 ## Uninstall
 ```bash
-cd ~/.dotfiles && sh uninstall.sh
+cd ~/.dotfiles && bash uninstall.sh
 cd && rm -rf ~/.dotfiles
 ```
 
