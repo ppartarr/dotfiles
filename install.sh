@@ -8,21 +8,22 @@ set -e
 # shellcheck source=/dev/null
 . "$HOME/.dotfiles/packages.sh"
 
+# Install core packages
 for pkg in "${PKG[@]}"
 do
   echo "Installing ${pkg}..."
   sudo pacman -Syu "$pkg" --needed --noconfirm
 done
 
+# Install AUR packages
 for aur in "${AUR[@]}"
 do
   echo "Installing ${aur}..."
   yay -Syu "$aur" --needed --noconfirm
 done
 
-# install dotfiles
+# Install dotfiles
 cd "$HOME/.dotfiles"
-
 dirs=$(find . -maxdepth 1 -mindepth -type -d -not -name '.git' -print)
 for dir in $dirs
 do
