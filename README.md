@@ -51,6 +51,5 @@ Run this command to use virtualenv and avoid installing pip packages globally `.
 ### Install
 You can install the cli tool with hot-reloading using: `pip install --editable . --user`. That's it, you can start working now!
 
-
 ## License
 [wtfpl](https://github.com/ppartarr/dotfiles/blob/master/LICENSE) @ [Philippe Partarrieu](https://partarrieu.me)
