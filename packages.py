@@ -4,5 +4,5 @@ packages=[
   "tmux",
   "vim",
   "xclip",
-  "zsh",
+  "zsh"
 ]

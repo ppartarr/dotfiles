@@ -21,7 +21,7 @@
 ```bash
 git clone https://github.com/ppartarr/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-pip install dotfiles
+pip install .
 ```
 
 ### Usage
