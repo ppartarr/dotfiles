@@ -17,7 +17,6 @@ def cli():
 @click.option('--home', envvar='HOME', help='Destination directory for symlink to be created in, defaults to $HOME')
 def symlink(dotfiles, home):
   """Creates symlinks from dotfiles to user's home"""
-
   for dotfile in dotfiles:
     filename = utils.remove_filename_prefix(dotfile)
     destination = home + '/' + filename
@@ -30,12 +29,12 @@ def symlink(dotfiles, home):
       os.symlink(realpath, destination)
       click.echo('Symlink created\n')
      
+
 @cli.command()
 @click.option('--dotfiles', default=glob.glob('./files/*/.*'), help='List of dotfile paths as strings i.e. ["./.vim", "./.zsh"]')
 @click.option('--home', envvar='HOME', help='Destination directory for symlink to be created in, defaults to $HOME')
 def clean(dotfiles, home):
   """Removes all created symlinks to dotfiles"""
-
   for dotfile in dotfiles:
     filename = utils.remove_filename_prefix(dotfile)
     symlink_path = home + '/' + filename
@@ -43,6 +42,7 @@ def clean(dotfiles, home):
       click.echo('Removing %s symlink' % dotfile)
       os.unlink(symlink_path)
   
+
 @cli.command()
 @click.option('-p', '--password', prompt=True, hide_input=True, help='Password for sudo')
 def install(password):
@@ -59,8 +59,8 @@ def install(password):
 @click.option('-p', '--password', prompt=True, hide_input=True, help='Password for sudo')
 def uninstall(password):
   """Uninstall packages in packages.py - USE WITH CAUTION"""
-    packages_string = ' '.join(str(p) for p in packages)
-    click.echo('Uninstalling packages %s\n' % packages_string)
-    process = subprocess.Popen(['sudo', '-S'] + 'pacman -R --noconfirm'.split() + packages, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
-    process.communicate(password.encode())
-    click.echo('Uninstallation finished')
+  packages_string = ' '.join(str(p) for p in packages)
+  click.echo('Uninstalling packages %s\n' % packages_string)
+  process = subprocess.Popen(['sudo', '-S'] + 'pacman -R --noconfirm'.split() + packages, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+  process.communicate(password.encode())
+  click.echo('Uninstallation finished')
