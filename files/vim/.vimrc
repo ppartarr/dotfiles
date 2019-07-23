@@ -1,5 +1,5 @@
 """ UI Config
-set number            " show line numbers
+set relativenumber    " show line numbers
 set ruler             " show line and column number
 syntax on             " use syntax highlighting
 set wildmenu          " visual autocomplete for command menu
