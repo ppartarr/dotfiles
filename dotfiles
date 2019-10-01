@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 declare -a files=(
+  ".alias"
   ".envvars"
   ".compton.conf"
   ".config/i3/config"

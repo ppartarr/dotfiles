@@ -19,7 +19,7 @@
 
 ## Install
 ```bash
-git clone https://github.com/ppartarr/dotfiles ~/.dotfiles
+git clone git@github.com:ppartarr/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 

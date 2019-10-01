@@ -1,0 +1,2 @@
+alias vpn-os3="sudo openvpn /etc/openvpn/client/vpn.students.os3.nl.ovpn"
+alias vpn-uva="sudo openvpn /etc/openvpn/client/uva.vpn.students.os3.nl.ovpn"
