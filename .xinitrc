@@ -42,7 +42,7 @@ eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
 # add wallpaper
-~/.fehbg &
+exec /home/philippe/.fehbg &
 
 # run i3
 exec i3
