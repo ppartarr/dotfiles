@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+declare -a files=(
+  ".envvars"
+  ".compton.conf"
+  ".config/i3/config"
+  ".config/rofi/config"
+  ".tmux.conf"
+  ".tmux.conf.local"
+  ".vimrc"
+  ".xinitrc"
+  ".Xresources"
+  ".zprofile"
+  ".zshrc"
+)

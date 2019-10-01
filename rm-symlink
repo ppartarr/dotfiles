@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+source dotfiles
+
+dir=`pwd`
+
+for file in ${files[@]}; do
+  # echo "$dir/$file"
+  unlink $dir/$file
+done
+

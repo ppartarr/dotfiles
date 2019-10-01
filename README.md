@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  dotfiles for vim, zsh, and tmux users
+  dotfiles for vim, zsh, tmux and more
 </p>
 
 <div align="center">
@@ -21,35 +21,16 @@
 ```bash
 git clone https://github.com/ppartarr/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-pip install .
 ```
 
 ### Usage
+```bash
+# create symlinks
+$ chmod +x symlink && ./symlink
 
-Run `dotfiles --help` for some information about the available commands and what they do
+# remove them
+$ chmod +x rm-symlink && ./rm-symlink
 ```
-Usage: dotfiles [OPTIONS] COMMAND [ARGS]...
-
-  Setup your dotfiles.
-
-Options:
-  --help  Show this message and exit.
-
-Commands:
-  clean      Removes all creates symlinks to dotfiles
-  install    Install packages in packages.py
-  symlink    Creates symlinks from dotfiles to user's home
-  uninstall  Uninstall packages in packages.py
-```
-
-For additional information about each command, run `dotfiles COMMAND --help`
-
-## Developement
-###  Activate the virtual environment
-Run this command to use virtualenv and avoid installing pip packages globally `. venv/bin/activate` 
-
-### Install
-You can install the cli tool with hot-reloading using: `pip install --editable . --user`. That's it, you can start working now!
 
 ## License
 [wtfpl](https://github.com/ppartarr/dotfiles/blob/master/LICENSE) @ [Philippe Partarrieu](https://partarrieu.me)
