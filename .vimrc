@@ -6,7 +6,11 @@ syntax on             " use syntax highlighting
 set wildmenu          " visual autocomplete for command menu
 set lazyredraw        " redraw screen only when we need to
 set showmatch         " highlight matching [{( )}]
+
+""" Highlighting rules
 highlight CursorLineNr cterm=NONE
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 """ Spaces & Tabs
 set nowrap                        " don't wrap lines
@@ -21,7 +25,7 @@ set backspace=indent,eol,start    " backspace through everything in insert mode
 set incsearch                               " search as characters are entered
 set hlsearch                                " highlight matches
 " turn off search highlight using /<space>
-nnoremap <leader><space> :nohlsearch<CR> 
+nnoremap <leader><space> :nohlsearch<CR>
 
 """ Folding
 set foldenable          " enable folding
@@ -31,5 +35,3 @@ set foldmethod=indent   " fold based on ident level
 
 " open/close folds using space
 nnoremap <space> za
-
-
