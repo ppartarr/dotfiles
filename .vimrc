@@ -6,6 +6,7 @@ syntax on             " use syntax highlighting
 set wildmenu          " visual autocomplete for command menu
 set lazyredraw        " redraw screen only when we need to
 set showmatch         " highlight matching [{( )}]
+highlight CursorLineNr cterm=NONE
 
 """ Spaces & Tabs
 set nowrap                        " don't wrap lines
@@ -27,6 +28,7 @@ set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=5       " 10 nested fold max
 set foldmethod=indent   " fold based on ident level
+
 " open/close folds using space
 nnoremap <space> za
 
