@@ -42,8 +42,8 @@ URxvt*scrollBar: false
 URxvt.perl-ext-common:              font-size,default,matcher
 
 ! font
-URxvt.font: xft:monospace:pixelsize=10:style=regular
-URxvt.keysym.Control-Up:           perl:font-size:increment
+URxvt.font:                         xft:monospace:pixelsize=10:style=regular
+URxvt.keysym.Control-Up:            perl:font-size:increment
 URxvt.keysym.Control-Down:          perl:font-size:decrement
 URxvt.keysym.Control-Shift-Up:      perl:font-size:incglobal
 URxvt.keysym.Control-Shift-Down:    perl:font-size:decglobal

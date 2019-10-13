@@ -37,12 +37,9 @@ twm &
 xclock -geometry 50x50-1+1 &
 
 # configure mailspring
-dbus-update-activation-environment --systemd DISPLAY
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
-
-# add wallpaper
-exec /home/philippe/.fehbg &
+dbus-update-activation-environment --systemd DISPLAY &
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh) &
+export SSH_AUTH_SOCK &
 
 # run i3
 exec i3
