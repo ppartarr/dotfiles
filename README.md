@@ -19,17 +19,15 @@
 
 ## Install
 ```bash
-git clone git@github.com:ppartarr/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+$ git clone git@github.com:ppartarr/dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
 ```
 
-### Usage
+## Usage
+I recommend that you [stow](https://www.gnu.org/software/stow/) for managing symlinks e.g.
 ```bash
-# create symlinks
-$ chmod +x symlink && ./symlink
-
-# remove them
-$ chmod +x rm-symlink && ./rm-symlink
+$ cd ~/.dotfiles
+$ stow vim
 ```
 
 ## License
