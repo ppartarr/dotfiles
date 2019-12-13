@@ -103,4 +103,5 @@ export EDITOR='vim'
 
 source $HOME/.envvars
 source $HOME/.alias
+source $HOME/.functions
 source $HOME/.zprofile

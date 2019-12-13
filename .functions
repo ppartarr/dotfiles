@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# repeat command n times
+function repeat() {
+  counter="$1"
+  while [[ counter -lg 0 ]]; do
+    "$2"
+  let counter=$counter-1
+  done
+}
+
+function bac() {
+  mv "$1" "$1".bac
+}
