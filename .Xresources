@@ -48,6 +48,12 @@ URxvt.keysym.Control-Down:          perl:font-size:decrement
 URxvt.keysym.Control-Shift-Up:      perl:font-size:incglobal
 URxvt.keysym.Control-Shift-Down:    perl:font-size:decglobal
 
+! copy paste
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
 ! clickable URLs
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
