@@ -24,10 +24,22 @@ $ cd ~/.dotfiles
 ```
 
 ## Usage
-I recommend that you [stow](https://www.gnu.org/software/stow/) for managing symlinks e.g.
+I use [stow](https://www.gnu.org/software/stow/) for managing symlinks. You can customise what tools you want the dotfiles for by commenting the name of the folder in the `setup.sh` script:
 ```bash
-$ cd ~/.dotfiles
-$ stow vim
+useronly=(
+    # contains dotfiles shared by bash and zsh like .profile
+    shell
+    vim
+    # pick either bash or zsh
+    bash
+    zsh
+    git
+)
+```
+
+Once you have configured which tools you want the dotfiles for, simply run
+```bash
+$ ./setup.sh
 ```
 
 ## License

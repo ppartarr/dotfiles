@@ -10,13 +10,12 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="haskell"
 
-# [fwalch, robbyrussel, cloud, lambda, spaceship]
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# ZSH_THEME_RANDOM_CANDIDATES=("fwalch", "robbyrussell", "cloud", "lambda", "spaceship")
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -104,4 +103,3 @@ export EDITOR='vim'
 source $HOME/.envvars
 source $HOME/.alias
 source $HOME/.functions
-source $HOME/.zprofile

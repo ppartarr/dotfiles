@@ -35,3 +35,6 @@ set foldmethod=indent   " fold based on ident level
 
 " open/close folds using space
 nnoremap <space> za
+
+" toggle paste mode with f3
+set pastetoggle=<F3>
