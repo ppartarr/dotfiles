@@ -99,6 +99,19 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+export PATH=$PATH:~/bin
+
+# set vim mode
+bindkey -v
+
+# add missing hostkeys for vim mode
+bindkey -a u undo
+bindkey -a '^R' redo
+# bindkey -a '^/' history-incremental-search-backward
+
+if [ $INCOGNITO ]; then
+  unset HISTFILE
+fi
 
 source $HOME/.envvars
 source $HOME/.alias
