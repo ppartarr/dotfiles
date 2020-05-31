@@ -198,3 +198,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id mailspring
 exec --no-startup-id firefox
+exec --no-startup-id "xrandr --output DP-3 --auto --above eDP-1" # put second display on top of first
