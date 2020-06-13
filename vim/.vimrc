@@ -13,7 +13,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 """ Spaces & Tabs
-set nowrap                        " don't wrap lines
+set wrap                          " don't wrap lines
 set tabstop=2                     " number of visual spaces per tab
 set softtabstop=2                 " number of spaces in tab when editing
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
@@ -38,3 +38,7 @@ nnoremap <space> za
 
 " toggle paste mode with f3
 set pastetoggle=<F3>
+
+""" copy
+command Copy :set nonu nornu wrap
+command Uncopy :set nu rnu nowrap
