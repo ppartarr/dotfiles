@@ -14,6 +14,7 @@ useronly=(
     vim
     zsh
     tmux
+    xorg
     # bash
     # git
 )
