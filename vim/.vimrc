@@ -42,3 +42,7 @@ set pastetoggle=<F3>
 """ copy
 command Copy :set nonu nornu wrap
 command Uncopy :set nu rnu nowrap
+
+""" Persistent undo
+set undofile
+set undodir=~/.vim/undo
