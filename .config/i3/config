@@ -1,6 +1,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-# mod windows key
+# mod is the windows key
 set $mod Mod4
 set $alt Mod1
 
@@ -38,7 +38,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 30
+bindsym $mod+space exec rofi -show run -lines 5 -eh 2 -width 30
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -134,14 +134,16 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # default workspaces
 assign [class="URxvt"] $ws1
-assign [class="firefox"] $ws2
+assign [class="vivaldi-stable"] $ws2
 assign [class="Mailspring"] $ws3
 assign [class="code-oss"] $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -185,8 +187,15 @@ bindsym $mod+$alt+l exec "betterlockscreen -l blur -t 'Hi Philippe'"
 bindsym $mod+r mode "resize"
 
 # day & night scripts
-bindsym $mod+b exec "day"
-bindsym $mod+n exec "night"
+bindsym $mod+d exec "$HOME/bin/day"
+bindsym $mod+n exec "$HOME/bin/night"
+
+# vpn
+bindsym $mod+Shift+v exec "$HOME/.config/polybar/scripts/wireguard.sh --toggle &"
+#bindsym $mod+Shift+w exec "$HOME/.config/polybar/scripts/wireless.sh --toggle &"
+
+# switch top & bottom monitors
+bindsym $mod+Shift+s exec "$HOME/bin/i3-switch > /dev/null 2>&1"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -201,5 +210,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Applications to run on i3 startup
 exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id mailspring
-exec --no-startup-id firefox
+exec --no-startup-id vivaldi-stable
 exec --no-startup-id "xrandr --output DP-3 --auto --above eDP-1" # put second display on top of first
