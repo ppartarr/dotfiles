@@ -24,6 +24,7 @@ set backspace=indent,eol,start    " backspace through everything in insert mode
 """ Search
 set incsearch                               " search as characters are entered
 set hlsearch                                " highlight matches
+set ignorecase                              " perform case insensitive search
 " turn off search highlight using /<space>
 nnoremap <leader><space> :nohlsearch<CR>
 
