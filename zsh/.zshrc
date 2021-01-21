@@ -117,3 +117,7 @@ fi
 source $HOME/.envvars
 source $HOME/.alias
 source $HOME/.functions
+
+# python anaconda installed with yay -Sy anaconda
+# export PATH="/usr/local/anaconda3/bin:$PATH"
+
