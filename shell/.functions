@@ -10,5 +10,5 @@ function repeat() {
 }
 
 function bac() {
-  mv "$1" "$1".bac
+  cp "$1" "$1".bac
 }
