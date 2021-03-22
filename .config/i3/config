@@ -173,8 +173,8 @@ mode "resize" {
 }
 
 # audio
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute && $refresh_i3status
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle && $refresh_i3status
 
 # brightness
