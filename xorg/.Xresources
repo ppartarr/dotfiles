@@ -1,0 +1,35 @@
+#include "/home/philippe/.dotfiles/.xcolors/haskell"
+
+! scrollbar
+URxvt*scrollBar: false
+
+! enable perl extension
+URxvt.perl-ext-common:              font-size,default,matcher
+
+! font
+URxvt.font:                         xft:Hasklug Nerd Font Mono:pixelsize=16:style=regular
+URxvt.keysym.Control-Up:            perl:font-size:increment
+URxvt.keysym.Control-Down:          perl:font-size:decrement
+URxvt.keysym.Control-Shift-Up:      perl:font-size:incglobal
+URxvt.keysym.Control-Shift-Down:    perl:font-size:decglobal
+
+! control jump
+! URxvt.keysym.Control-Up:    \033[1;5A
+! URxvt.keysym.Control-Down:  \033[1;5B
+! URxvt.keysym.Control-Left:  \033[1;5D
+! URxvt.keysym.Control-Right: \033[1;5C
+
+! copy paste
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! disable keycap picture mode for copy paste to work
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! clickable URLs
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
