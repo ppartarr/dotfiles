@@ -42,3 +42,7 @@ for app in ${useronly[@]}; do
         stowit "$HOME" $app
     fi
 done
+
+if [[ "${useronly[@]}" =~ "${xorg}" ]]; then
+  cp -R .xcolors ~/.xcolors
+fi

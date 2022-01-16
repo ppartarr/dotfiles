@@ -78,16 +78,18 @@ bindsym $mod+$alt+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# bindym $mod+w exec "$HOME/bin/toggle-wifi.sh --toggle"
+
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -133,7 +135,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # default workspaces
-assign [class="URxvt"] $ws1
+assign [class="urxvt"] $ws1
 assign [class="vivaldi-stable"] $ws2
 assign [class="Mailspring"] $ws3
 assign [class="code-oss"] $ws4
@@ -195,13 +197,7 @@ bindsym $mod+Shift+v exec "$HOME/.config/polybar/scripts/wireguard.sh --toggle &
 #bindsym $mod+Shift+w exec "$HOME/.config/polybar/scripts/wireless.sh --toggle &"
 
 # switch top & bottom monitors
-bindsym $mod+Shift+s exec "$HOME/bin/i3-switch > /dev/null 2>&1"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#         status_command i3status
-# }
+bindsym $mod+s exec "$HOME/bin/i3-switch > /dev/null 2>&1"
 
 # Applications to run on i3 refresh
 exec_always --no-startup-id compton -f
@@ -212,3 +208,4 @@ exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id mailspring
 exec --no-startup-id vivaldi-stable
 exec --no-startup-id "xrandr --output DP-3 --auto --above eDP-1" # put second display on top of first
+exec --no-startup-id redshift

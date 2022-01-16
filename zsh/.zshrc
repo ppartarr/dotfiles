@@ -102,22 +102,12 @@ export EDITOR='vim'
 #
 export PATH=$PATH:~/bin
 
-# set vim mode
-bindkey -v
-
-# add missing hostkeys for vim mode
-bindkey -a u undo
-bindkey -a '^R' redo
-# bindkey -a '^/' history-incremental-search-backward
-
+# no history with zsh -i
 if [ $INCOGNITO ]; then
   unset HISTFILE
 fi
 
+
 source $HOME/.envvars
 source $HOME/.alias
 source $HOME/.functions
-
-# python anaconda installed with yay -Sy anaconda
-# export PATH="/usr/local/anaconda3/bin:$PATH"
-
