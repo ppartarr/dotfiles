@@ -1,0 +1,29 @@
+ERROR:root:node has been up for 362min which is longer than the timeout 2h
+INFO:root:sending email...
+ERROR:root:node has been up for 365min which is longer than the timeout 2h
+INFO:root:sending email...
+ERROR:root:node has been up for 368min which is longer than the timeout 2h
+INFO:root:sending email...
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:Jenkins node DESKTOP-1UIGGMI has been up for too long
+ERROR:root:node has been up for 368min which is longer than the timeout 2h
+INFO:root:sending email...
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:Jenkins node DESKTOP-1UIGGMI has been up for too long
+INFO:root:click here to manually shut down the node in jenkins: https://build.mmxlabs.com/computer/
+ERROR:root:node has been up for 370min which is longer than the timeout 2h
+INFO:root:sending email...
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:Jenkins node DESKTOP-1UIGGMI has been up for too long
+INFO:root:click here to manually shut down the node in jenkins: https://build.mmxlabs.com/computer/
+ERROR:root:node has been up for 372min which is longer than the timeout 2h
+ERROR:root:node has been up for 372min which is longer than the timeout 2h
+ERROR:root:node has been up for 373min which is longer than the timeout 2h
+INFO:root:sending email...
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:ppartarrieu@minimaxlabs.com
+INFO:root:Jenkins node DESKTOP-1UIGGMI has been up for too long
+INFO:root:click here to manually shut down the node in jenkins: https://build.mmxlabs.com/computer/

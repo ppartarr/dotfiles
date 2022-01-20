@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+hubs=(v k p q r s t w)
+for hub in "${hubs[@]}"; do
+  docker image rm docker.mmxlabs.com/datahub-$hub:1.8.1-SNAPSHOT
+done

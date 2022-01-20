@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import sys
+import re
+
+in_filename = sys.argv[1]
+#out_filename = sys.argv[2]
+
+with open(in_filename, 'r+') as f:
+  text = f.read()
+  text = re.sub(r'[ ]{5,}', '\n', text)
+  print(text)
+
+  f.close()
+
