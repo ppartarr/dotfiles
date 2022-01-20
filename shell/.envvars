@@ -9,7 +9,7 @@ export PATH=$PATH:/home/philippe/bin
 # Add Maven to path
 export PATH=$PATH:/opt/apache-maven-3.6.0/bin
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 # Node Version Manager (nvm) autocomplete
 export NVM_DIR="$HOME/.nvm"
@@ -23,3 +23,6 @@ export PATH=$PATH:/usr/local/go/bin:$GOBIN
 
 # Add RVM to path
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Docker host
+export DOCKER_HOST=tcp://localhost:2375

@@ -1,3 +1,4 @@
+# linux
 alias vpn-os3="sudo openvpn /etc/openvpn/client/vpn.students.os3.nl.ovpn"
 alias vpn-uva="sudo openvpn /etc/openvpn/client/uva.vpn.students.os3.nl.ovpn"
 alias fuck="sudo !!"
@@ -8,4 +9,14 @@ alias incognito="INCOGNITO=1 zsh -i"
 alias inr="cd ~/documents/university/masters/inr/lectures"
 alias space="df -h"
 alias size="du -sh *"
+
+# windows
 alias gohome="cd ~/go/src/github.com/ppartarr/"
+alias lingo="cd /c/Users/Philippe/Work/lingo/ws/lingo.git"
+alias lg="cd /c/Users/Philippe/Work/lingo/ws/lingo.git"
+alias datahub="cd /c/Users/Philippe/Work/datahub-master/ws/datahub.git"
+alias dh="cd /c/Users/Philippe/Work/datahub/ws/datahub.git"
+alias healthy="cd /c/Go/github.com/ppartarr/healthy"
+alias work="cd /c/Users/Philippe/Work"
+alias dev-infra="cd /c/Users/Philippe/Work/dev-infra"
+alias python="python3"
